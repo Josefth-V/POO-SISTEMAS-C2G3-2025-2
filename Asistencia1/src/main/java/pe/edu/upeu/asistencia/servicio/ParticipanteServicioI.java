@@ -8,10 +8,13 @@ public interface ParticipanteServicioI {
 
     void save(Participante participante);
     List<Participante> findAll();
-    Participante update(Participante participante, int index); //u
+    Participante update(Participante participante, int index);
     void delete(int index);
 
-    Participante findById(int index);//Buscar
+    Participante findById(int index);
+
+
+
 
 
 }

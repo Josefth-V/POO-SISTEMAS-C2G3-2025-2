@@ -1,5 +1,6 @@
 package pe.edu.upeu.asistencia.modelo;
 
+
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.StringProperty;
 import lombok.AllArgsConstructor;
@@ -8,8 +9,8 @@ import lombok.NoArgsConstructor;
 import pe.edu.upeu.asistencia.enums.Carrera;
 import pe.edu.upeu.asistencia.enums.TipoParticipante;
 
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Data
 public class Participante {
     private StringProperty dni;
@@ -18,5 +19,4 @@ public class Participante {
     private Carrera carrera;
     private TipoParticipante tipoParticipante;
     private BooleanProperty estado;
-
 }

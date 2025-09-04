@@ -5,8 +5,9 @@ import pe.edu.upeu.asistencia.modelo.Participante;
 import pe.edu.upeu.asistencia.repositorio.ParticipanteRepository;
 
 import java.util.List;
+
 @Service
-public class ParticipanteServisioImp extends ParticipanteRepository implements ParticipanteServicioI { //erencia
+public class ParticipanteServicioiImp extends ParticipanteRepository implements ParticipanteServicioI {
 
 
     @Override
@@ -15,9 +16,10 @@ public class ParticipanteServisioImp extends ParticipanteRepository implements P
     }
 
     @Override
-    public List<Participante> findAll(){
+    public List<Participante> findAll() {
         if(participantes.size()==1){
-            return super.findAll();
+            return super.findALL();
+
         }
         return participantes;
     }
@@ -30,6 +32,7 @@ public class ParticipanteServisioImp extends ParticipanteRepository implements P
     @Override
     public void delete(int index) {
         participantes.remove(index);
+
     }
 
     @Override

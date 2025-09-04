@@ -8,19 +8,20 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Getter
 
-public enum Carrera {
-    SISTEMAS(Facultad.FIA,  "Ing sistemas"),
-    CIVIL(Facultad.FIA,  "Ing civil"),
-    AMBIENTAL (Facultad.FIA,  "Ing ambiental"),
+ public enum Carrera {
+    SISTEMAS(Facultad.FIA,  "Ing. Sistemas"),
+    CIVIL(Facultad.FIA,  "Ing. Civil"),
+    AMBIENTAL(Facultad.FIA,  "Ing. Ambiental"),
+
 
 
     ADMINISTRACION(Facultad.FCE,  "Administracion"),
     NUTRICION(Facultad.FCS,  "Nutricion"),
-    EDUCACION(Facultad.FACIHED,  "Educacion");
+    EDUCACION(Facultad.FACIHED,  "Educacion "),
 
-
-
+    ;
 
     private Facultad facultad;
     private String descripcion;
+
 }
