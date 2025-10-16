@@ -5,7 +5,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -27,7 +26,7 @@ public class SysVentasApplication extends Application {
 		SpringApplicationBuilder builder = new SpringApplicationBuilder(SysVentasApplication.class);
 		builder.application().setWebApplicationType(WebApplicationType.NONE);
 		applicationContext=builder.run(getParameters().getRaw().toArray(new String[0]));
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/login.fxml"));
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/main_producto.fxml"));
 		loader.setControllerFactory(applicationContext::getBean);
 		root = loader.load();
 	}
